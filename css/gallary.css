@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================global style================ */
+.container {
+    max-width: 1250px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-trans {
+    text-transform: uppercase;
+}
+
+/* ==================== topbar section =============== */
+.topbar-sec {
+    background: #173a69;
+    padding: 10px 0;
+}
+
+.topbar-sec .topbar-parents .topbar-contact {
+    width: 50%;
+}
+
+.topbar-sec .topbar-parents .topbar-contact ul li {
+    margin-left: 40px;
+}
+
+.topbar-sec .topbar-parents .topbar-contact ul li a {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.topbar-sec .topbar-parents .topbar-icon {
+    width: 50%;
+}
+
+.topbar-sec .topbar-parents .icon ul {
+    justify-content: end;
+}
+
+.topbar-sec .topbar-parents .icon ul li {
+    margin-left: 32px;
+}
+
+.topbar-sec .topbar-parents .icon ul li a:hover {
+    color: red;
+}
+
+/* =========================== topbar section=========== */
+.menubar-section {
+    padding: 15px 0;
+}
+
+.menubar-section .menubar-parents .menubar-logo {
+    width: 50%;
+    text-align: left;
+    transform: translateX(25px);
+}
+
+.menubar-section .menubar-parents .menubar-list {
+    width: 50%;
+}
+
+.menubar-section .menubar-parents {
+    justify-content: space-between;
+}
+
+.menubar-section .menubar-parents .menubar-list ul {
+    justify-content: center;
+}
+
+.menubar-section .menubar-parents .menubar-list ul li {
+    position: relative;
+    display: inline-block;
+    transition: 1s;
+}
+
+.menubar-section .menubar-parents .menubar-list ul li a {
+    padding: 0 25px;
+}
+
+.menubar-section .menubar-parents .menubar-list ul li::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: #0c1f38;
+    left: 55%;
+    transform: translateX(-50%);
+    transition: 1s;
+    bottom: -46px;
+
+}
+
+.menubar-section .menubar-parents .menubar-list ul li:hover::after {
+    width: 100%;
+
+}
+
+.menubar-section .menubar-parents .menubar-list ul li a {
+    font-size: 15px;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* ============= End of navbar section ============== */
+.banner-sec {
+    background-image: url("../img/service-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 285px 0;
+    position: relative;
+    z-index: 99;
+}
+
+.banner-sec::after {
+    background-color: #000;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: .6;
+    z-index: -1;
+}
+
+.banner-sec .banner-parents .banner-text {
+    text-align: center;
+    transform: translateX(10%);
+}
+
+.banner-sec .banner-parents .banner-text .bannertitle h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    padding-bottom: 20px;
+}
+
+.banner-sec .banner-parents .banner-text .bannertitle .banner-list a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+}
+
+/* ............ end banner ...............  */
+.gallary-sec {
+    padding: 85px 0px 108px 0px;
+}
+
+.gallary-sec .gallary-parents {
+    position: relative;
+}
+
+.gallary-sec .gallary-parents .gallary-img1 .hover-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #302f30;
+    overflow: hidden;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+    color: white;
+}
+
+.gallary-sec .gallary-parents .gallary-img1 {
+    width: 100%;
+    column-gap: 2%;
+    margin-top: 30px;
+}
+
+.gallary-sec .gallary-parents .gallary-img1 .hover img {
+    width: 100%;
+}
+
+.gallary-sec .gallary-parents .gallary-img1 .hover-part .hover-item {
+    text-align: center;
+    transform: translateY(63%);
+    top: 0;
+    left: 0;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.gallary-sec .gallary-parents .gallary-img1 .hover-part .hover-item a {
+    color: white;
+}
+
+.gallary-sec .gallary-parents .gallary-img1 .hover {
+    position: relative;
+    width: 100%;
+}
+
+.gallary-sec .gallary-parents .gallary-img1 .hover:hover .hover-part {
+    transform: scale(1);
+}
+
+/* ------------------- contact part ---------- */
+.contact-sec {
+    background-color: #173a69;
+}
+
+.contact-sec .contact-parents {
+    text-align: center;
+    padding: 87px 0px 80px 0px;
+}
+
+.contact-sec .contact-parents p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.contact-sec .contact-parents a {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
+}
+
+/* ================== logo-icon part ============= */
+.logo-icon .logo-icon-parents {
+    text-align: center;
+    margin: 70px;
+}
+
+
+.logo-icon .logo-icon-parents .icon-img {
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 50px;
+}
+
+.logo-icon .logo-icon-parents .icon-img i {
+    font-size: 16px;
+    color: gray;
+    height: 20px;
+    width: 20px;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.logo-icon .logo-icon-parents .icon-img i:hover {
+    background-color: #173a69;
+    color: white;
+}
+
+/* ===============fotter sec ============ */
+.footer-sec {
+    background: #000;
+    color: white;
+    padding: 30px 0px 26px 0px;
+    text-align: center;
+}
+
+.footer-sec .footer-parents p {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.footer-sec .footer-parents a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border-bottom: 1px solid white;
+}

@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================global style================ */
+.container {
+    max-width: 1250px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-trans {
+    text-transform: uppercase;
+}
+
+/* ==================== topbar section =============== */
+.topbar-sec {
+    background: #173a69;
+    padding: 10px 0;
+}
+
+.topbar-sec .topbar-parents .topbar-contact {
+    width: 50%;
+}
+
+.topbar-sec .topbar-parents .topbar-contact ul li {
+    margin-left: 40px;
+}
+
+.topbar-sec .topbar-parents .topbar-contact ul li a {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.topbar-sec .topbar-parents .topbar-icon {
+    width: 50%;
+}
+
+.topbar-sec .topbar-parents .icon ul {
+    justify-content: end;
+}
+
+.topbar-sec .topbar-parents .icon ul li {
+    margin-left: 32px;
+}
+
+.topbar-sec .topbar-parents .icon ul li a:hover {
+    color: red;
+}
+
+/* =========================== topbar section=========== */
+.menubar-section {
+    padding: 15px 0;
+}
+
+.menubar-section .menubar-parents .menubar-logo {
+    width: 50%;
+    text-align: left;
+    transform: translateX(25px);
+}
+
+.menubar-section .menubar-parents .menubar-list {
+    width: 50%;
+}
+
+.menubar-section .menubar-parents {
+    justify-content: space-between;
+}
+
+.menubar-section .menubar-parents .menubar-list ul {
+    justify-content: center;
+}
+
+.menubar-section .menubar-parents .menubar-list ul li {
+    position: relative;
+    display: inline-block;
+    transition: 1s;
+}
+
+.menubar-section .menubar-parents .menubar-list ul li a {
+    padding: 0 25px;
+}
+
+.menubar-section .menubar-parents .menubar-list ul li::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: #0c1f38;
+    left: 55%;
+    transform: translateX(-50%);
+    transition: 1s;
+    bottom: -46px;
+
+}
+
+.menubar-section .menubar-parents .menubar-list ul li:hover::after {
+    width: 100%;
+
+}
+
+.menubar-section .menubar-parents .menubar-list ul li a {
+    font-size: 15px;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* ============= End of navbar section ============== */
+
+.banner-sec {
+    background-image: url("../img/service-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 285px 0;
+    position: relative;
+    z-index: 99;
+}
+
+.banner-sec::after {
+    background-color: #000;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: .6;
+    z-index: -1;
+}
+
+.banner-sec .banner-parents .banner-text {
+    text-align: center;
+    transform: translateX(10%);
+}
+
+.banner-sec .banner-parents .banner-text .bannertitle h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    padding-bottom: 20px;
+}
+
+.banner-sec .banner-parents .banner-text .bannertitle .banner-list a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+}
+
+/* ............ end banner ...............  */
+
+
+.welecome-sec {
+    background-image: url("../img/aboutbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welecome-sec .welecome-parents {
+    column-gap: 2%;
+}
+
+.welecome-sec .welecome-parents .welecome-img {
+    position: relative;
+}
+
+.welecome-sec .welecome-parents .welecome-img::after {
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 260px;
+    border: dashed;
+    color: #b4b2b2;
+    top: 14%;
+    left: -6%;
+    z-index: -1;
+}
+
+.welecome-sec .welecome-parents .welecome-img {
+    padding: 108px 0;
+    z-index: 99;
+}
+
+.welecome-sec .welecome-parents .welecome-img .img-one {
+    position: relative;
+    width: 40%;
+}
+
+.welecome-sec .welecome-parents .welecome-img .img-one .hover-img {
+    position: absolute;
+    top: 0;
+}
+
+.welecome-sec .welecome-parents .welecome-img .img-one:hover .hover-img {
+    display: none;
+}
+
+.welecome-sec .welecome-parents .welecome-text {
+    width: 56%;
+}
+
+.welecome-sec .welecome-parents .welecome-text .welecome-title {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+    position: relative;
+}
+
+.welecome-sec .welecome-parents .welecome-text .welecome-title .silver {
+    color: #173a69;
+}
+
+.welecome-sec .welecome-parents .welecome-text .welecome-title ::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background: #173a69;
+    left: 5px;
+    top: 62px;
+}
+
+.welecome-sec .welecome-parents .welecome-text .welecome-title h2 {
+    position: relative;
+}
+
+.welecome-sec .welecome-parents .welecome-text .welecome-title h2::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background: #173a69;
+    top: 72px;
+    left: 5%;
+}
+
+.welecome-sec .welecome-parents .welecome-text .welecomedes {
+    padding-top: 90px;
+    max-width: 90%;
+}
+
+/* ===================== End of about sec ================ */
+
+.card-sec {
+    background-image: url("../img/about-card-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    position: relative;
+    z-index: 99;
+}
+
+.card-sec ::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    opacity: .4;
+    z-index: -1;
+}
+
+.card-sec .card-parents {
+    column-gap: 2%;
+}
+
+.card-sec .card-parents .card-one {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    width: 32%;
+}
+
+.card-sec .card-parents .card-one .card-img {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #173a69;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.card-sec .card-parents .card-one .card-title h2::after {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    transform: rotate(45deg);
+    background: #173a69;
+    top: 62%;
+    left: 49.5%;
+    z-index: 99;
+    opacity: .9;
+}
+
+.card-sec .card-parents .card-one .card-title h2::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 60px;
+    background: #173a69;
+    top: 70%;
+    left: 33%;
+
+}
+
+.card-sec .card-parents .card-one .card-title h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    padding: 20px 0px 40px 0px;
+    color: #173a69;
+    position: relative;
+}
+
+.card-sec .card-parents .card-one .card-title {
+    position: relative;
+}
+
+.card-sec .card-parents .card-one .card-title::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 60px;
+    background: #173a69;
+    top: 70%;
+    right: 30%;
+}
+
+.card-sec .card-parents .card-one .card-des p {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    padding: 0px 25px 30px 25px;
+}
+
+
+/* ...............company-sec........  */
+.company-sec .company-parents .company-title h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    padding: 48px 0px 42px 0px;
+}
+
+/* .............. icon sec ..........  */
+
+.icon-sec {
+    background-image: url(../img/company-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-sec .icon-parents .icon-one {
+    text-align: center;
+    padding-top: 82px;
+}
+
+.icon-sec .icon-parents .icon-one .icon-img {
+    font-size: 30px;
+    color: #173a69;
+    height: 90px;
+    width: 90px;
+    border: 1px solid #173a69;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icon-sec .icon-parents .icon-one .icon-title h3 {
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 700;
+    color: #173a69;
+    padding: 35px 15px;
+}
+
+.icon-sec .icon-parents .icon-one .icon-des p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-bottom: 120px;
+    max-width: 90%;
+}
+
+/* ............ End icon sec ............... */
+
+/* ------------------- contact part ---------- */
+.contact-sec {
+    background-color: #173a69;
+}
+
+.contact-sec .contact-parents {
+    text-align: center;
+    padding: 87px 0px 80px 0px;
+}
+
+.contact-sec .contact-parents p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.contact-sec .contact-parents a {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
+}
+
+/* ================== logo-icon part ============= */
+.logo-icon .logo-icon-parents {
+    text-align: center;
+    margin: 70px;
+}
+
+
+.logo-icon .logo-icon-parents .icon-img {
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 50px;
+}
+
+.logo-icon .logo-icon-parents .icon-img i {
+    font-size: 16px;
+    color: gray;
+    height: 20px;
+    width: 20px;
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.logo-icon .logo-icon-parents .icon-img i:hover {
+    background-color: #173a69;
+    color: white;
+}
+
+/* ===============fotter sec ============ */
+.footer-sec {
+    background: #000;
+    color: white;
+    padding: 30px 0px 26px 0px;
+    text-align: center;
+}
+
+.footer-sec .footer-parents p {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.footer-sec .footer-parents a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border-bottom: 1px solid white;
+}
