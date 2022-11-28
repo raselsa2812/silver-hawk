@@ -23,8 +23,88 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+    <script src="https://kit.fontawesome.com/b589350cc9.js" crossorigin="anonymous"></script>
+
     <!--------------------------Css link--------------------->
+
     <link rel="stylesheet" href="./css/home.css">
+    <style>
+        .topnav {
+            width: 70%;
+            justify-content: end;
+            transform: translateX(37px);
+            position: relative;
+            transition: 1s;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: #173a69;
+            text-align: center;
+            margin: 0px 38px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+            text-transform: uppercase;
+            /* transition: 1s; */
+        }
+
+        .logo {
+            width: 30%;
+            text-align: left;
+            transform: translate(18px, 5px);
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 1100px) {
+            .topnav a {
+                display: none;
+                padding: 10px;
+                float: none;
+            }
+
+            .topnav a:hover {
+                background-color: black;
+                color: white;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+
+
+        }
+
+        @media screen and (max-width: 1100px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -53,28 +133,28 @@
             </div>
         </div>
     </section>
+    <!-- ====================== menu bar.......................  -->
 
-    <!-- ===================== menubar ================ -->
-
-    <section class="menubar-section">
+    <section class="menu">
         <div class="container">
-            <div class="menubar-parents d-flex ">
-                <div class="menubar-logo">
-                    <a href="#"><img src="./img/logo.png" alt=""></a>
+            <div class="menu-parents d-flex">
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/logo.png" alt=""></a>
                 </div>
-
-                <div class="menubar-list">
-                    <ul class="d-flex text-trans ">
-                        <li><a class="text-black" href="index.html">home</a></li>
-                        <li><a class="text-black" href="services.html">services</a></li>
-                        <li><a class="text-black" href="about.html">about us</a></li>
-                        <li><a class="text-black" href="gallary.html">gellary</a></li>
-                        <li><a class="text-black" href="contact.html">contact us</a></li>
-                    </ul>
+                <div class="topnav d-flex" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">services</a>
+                    <a href="about.html">about us</a>
+                    <a href="gallary.html">gallary</a>
+                    <a href="contact.html">contact us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- =============== end navbar section============ -->
 
     <section class="banner-sec">
@@ -151,8 +231,10 @@
                             disputando. Audiam verear maluisset an sea, cu sea ipsum
                             postulant scripserit. </p>
                         <br>
-                        <p>Eum dicat inimicus ad, cum diceret phaedrum no, at feugait facilisi praesent vel. Est habeo
-                            aliquam consectetuer in. Ad usu saperet referrentur, mel te timeam senserit, eu mea inimicus
+                        <p>Eum dicat inimicus ad, cum diceret phaedrum no, at feugait facilisi praesent vel. Est
+                            habeo
+                            aliquam consectetuer in. Ad usu saperet referrentur, mel te timeam senserit, eu mea
+                            inimicus
                             explicari.</p>
                     </div>
                 </div>
@@ -172,7 +254,7 @@
 
                 <div class="gallary-img1 d-flex">
                     <div class="hover">
-                        <img src="./img/g1.jpg" alt="Avatar" class="image" width="99%">
+                        <img src="./img/g1.jpg" alt="Avatar" class="image">
                         <div class=" hover-part">
                             <div class="hover-item">
                                 <a href="#"><i class="fa-sharp fa-solid fa-circle-plus"></i></a>
@@ -183,7 +265,7 @@
                     </div>
 
                     <div class="hover">
-                        <img src="./img/g2.jpg" alt="Avatar" class="image" width="99%">
+                        <img src="./img/g2.jpg" alt="Avatar" class="image">
                         <div class="hover-part">
                             <div class="hover-item">
                                 <a href="#"><i class="fa-sharp fa-solid fa-circle-plus"></i></a>
@@ -194,7 +276,7 @@
                     </div>
 
                     <div class="hover">
-                        <img src="./img/g-3.jpg" alt="Avatar" class="image" width="99%" height="255px">
+                        <img src="./img/gallary-6.jpg" alt="Avatar" class="image">
                         <div class="hover-part">
                             <div class="hover-item">
                                 <a href="#"><i class="fa-sharp fa-solid fa-circle-plus"></i></a>
@@ -208,7 +290,7 @@
 
                 <div class="gallary-img1  d-flex">
                     <div class="hover">
-                        <img src="./img/g-4.jpg" alt="Avatar" class="image" width="99%" height="255px">
+                        <img src="./img/gallRY-4.jpg" alt="Avatar" class="image">
                         <div class="hover-part">
                             <div class="hover-item">
                                 <a href="#"><i class="fa-sharp fa-solid fa-circle-plus"></i></a>
@@ -219,7 +301,7 @@
                     </div>
 
                     <div class="hover">
-                        <img src="./img/g-5.jpg" alt="Avatar" class="image" width="99%" height="255px">
+                        <img src="./img/g-5.jpg" alt="Avatar" class="image">
                         <div class="hover-part">
                             <div class="hover-item">
                                 <a href="#"><i class="fa-sharp fa-solid fa-circle-plus"></i></a>
@@ -230,7 +312,7 @@
                     </div>
 
                     <div class="hover">
-                        <img src="./img/g-6.jpg" alt="Avatar" class="image" width="99%" height="255px">
+                        <img src="./img/g-6.jpg" alt="Avatar" class="image">
                         <div class="hover-part">
                             <div class="hover-item">
                                 <a href="#"><i class="fa-sharp fa-solid fa-circle-plus"></i></a>
@@ -282,13 +364,27 @@
     <section class="footer-sec">
         <div class="container">
             <div class="footer-parents">
-                <p>&copy; Copyright 2018 <a class="text-white" href="#">Silver Hawk,</a> All Rights Reserved|Web Design
+                <p>&copy; Copyright 2018 <a class="text-white" href="#">Silver Hawk,</a> All Rights Reserved|Web
+                    Design
                     by
                     Mohammad Rasel..
                 </p>
             </div>
         </div>
     </section>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
 </body>
 
 </html>

@@ -55,22 +55,21 @@
     </section>
 
     <!-- ===================== menubar ================ -->
-
-    <section class="menubar-section">
+    <section class="menu">
         <div class="container">
-            <div class="menubar-parents d-flex ">
-                <div class="menubar-logo">
-                    <a href="#"><img src="./img/logo.png" alt=""></a>
+            <div class="menu-parents d-flex">
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/logo.png" alt=""></a>
                 </div>
-
-                <div class="menubar-list">
-                    <ul class="d-flex text-trans ">
-                        <li><a class="text-black" href="index.html">home</a></li>
-                        <li><a class="text-black" href="services.html">services</a></li>
-                        <li><a class="text-black" href="about.html">about us</a></li>
-                        <li><a class="text-black" href="gallary.html">gellary</a></li>
-                        <li><a class="text-black" href="contact.html">contact us</a></li>
-                    </ul>
+                <div class="topnav d-flex" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">services</a>
+                    <a href="about.html">about us</a>
+                    <a href="gallary.html">gallary</a>
+                    <a href="contact.html">contact us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -249,6 +248,17 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
